@@ -1,0 +1,73 @@
+.navigation {
+    width: 100%;
+    height: 4em;
+    background-color: burlywood;    
+}
+
+.menu {
+    width: 40%;
+    margin: auto;
+    padding: 0;
+}
+
+input {
+    display: none;
+}
+
+.item {
+    display: inline-block;
+    padding: 1em;
+    margin: 0.5em 1.5em;
+}
+
+.second-item {
+    width: 4em;
+    height: 1em;
+    background-color: aqua;
+    border-radius: 0.5em;
+    transition: all 3s;
+    
+}
+
+
+
+.second-menu, .third-menu {
+    position: absolute;
+    top: -6em;
+    margin: 0;
+    opacity: 0;  
+}
+
+label:after {
+    content: "\2261";
+    width: 1em;
+}
+
+
+input:checked ~ .second-menu {
+    opacity: 1;
+    top: 6em;
+    display: block;
+    transition: all 2s;
+    margin: 0em -4em;
+    
+}
+
+
+.second_item--about {
+    width: 4em;
+    height: 1em;
+    background-color: aqua;
+    transform: rotate(-90deg);
+    padding: 2em;
+    list-style-type: none;  
+    position: relative;
+}
+
+.second_item--some {
+    position: absolute;
+    width: 40em;
+    height: 8em;
+    background-color: brown;
+    margin: -6.5em 6.5em;
+}

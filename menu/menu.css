@@ -1,0 +1,66 @@
+#menu-checkbox {
+    
+}
+
+
+.main-menu {
+    top: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.main-menu li {
+    font-size: 1em;
+    display: block;
+    width: 100%;
+}
+
+.main-menu a {
+    display: block;
+    border-bottom: 0.2em solid red;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+   text-decoration: underline;
+}
+
+.toggle-button {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.toggle-button:after {
+    font-family: 'fontello';
+    content: "\e804";
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(10em);
+    transition: all 0.5s;
+    
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .toogle-button:after {
+      content: "\e804";
+    
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+    content: "\f0c9";
+    font-family: 'FontAwesome';
+    color: green;
+}
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:before {
+    color: green;
+}
+
